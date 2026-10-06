@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090b10">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Launch Radar">
+<title>Launch Radar</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><div><h1>LAUNCH RADAR</h1><p>Manual Pump.fun paper scanner</p></div><span id="status">OFFLINE</span></header>
+<section class="stats">
+<div><small>CASH</small><b id="cash">$100.00</b></div>
+<div><small>EQUITY</small><b id="equity">$100.00</b></div>
+<div><small>REALIZED P/L</small><b id="pl">$0.00</b></div>
+<div><small>W/L</small><b id="wl">0 / 0</b></div>
+</section>
+<button id="start">START SCANNER</button>
+<div class="settings"><label>Alert score <input id="threshold" type="number" min="0" max="100" value="60"></label><button id="reset">RESET $100</button></div>
+<section class="card"><h2>NEW LAUNCHES <span id="count">0</span></h2><div id="launches">Waiting for launches…</div></section>
+<section class="card"><h2>SELECTED TOKEN</h2><div id="detail">Tap a launch above.</div></section>
+<section class="card"><h2>POSITIONS</h2><div id="positions">No open positions.</div></section>
+<section class="card"><h2>TRADE LOG</h2><div id="trades">No paper trades yet.</div></section>
+<footer>V1 • PAPER ONLY • <span id="latency">Latency —</span></footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
